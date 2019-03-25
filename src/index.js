@@ -1,2 +1,10 @@
 import './sass/style.sass'
-console.log("hello, world");
+import './components/buttons/sass/buttons-style.sass'
+import './components/buttons/sass/button-style.sass'
+import './components/buttons/css/waves.css'
+import './components/buttons/js/waves.js'
+import './components/arrows/sass/arrow-style.sass'
+import './components/charts/sass/chart-style.sass'
+import './components/sliders/sass/sliders-style.sass'
+import './components/sliders/js/jquery.js'
+import './components/sliders/js/slider-script.js'

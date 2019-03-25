@@ -1,0 +1,70 @@
+@import 'fonts'
+.charts
+	padding-bottom: 3px
+	.charts-title
+		padding-bottom: 8px
+	.charts-wrapper
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		list-style: none
+		padding-left: 0
+		margin-left: -5px
+		li
+			margin-right: 20px
+			&:last-child
+				margin-right: 0
+			&:nth-child(4)
+				margin-right: 15px
+.pie
+	border-radius: 100%
+	height: calc(var(--size, 200) * 1px)
+	overflow: hidden
+	position: relative
+	width: calc(var(--size, 200) * 1px)
+	&__segment
+		--a: calc(var(--over50, 0) * -100%)
+		--b: calc((1 + var(--over50, 0)) * 100%)
+		--degrees: calc((var(--offset, 0) / 100) * 360)
+		height: 100%
+		position: absolute
+		width: 100%
+		box-sizing: border-box
+		transform: translate(0, -50%) rotate(90deg) rotate(calc(var(--degrees) * 1deg))
+		-webkit-clip-path: polygon(var(--a) var(--a), var(--b) var(--a), var(--b) var(--b), var(--a) var(--b))
+    	clip-path: polygon(var(--a) var(--a), var(--b) var(--a), var(--b) var(--b), var(--a) var(--b))
+		transform-origin: 50% 100%
+		&:before, 
+		&:after
+			content: ''
+			height: 100%
+			width: 100%
+			position: absolute
+			background: var(--bg, #e74c3c)
+		&:before
+			--degrees: calc((var(--value, 45) / 100) * 360)
+			transform: translate(0, 100%) rotate(calc(var(--degrees) * 1deg))
+			transform-origin: 50% 0
+		&:after
+			opacity: var(--over50, 0)
+	&:after
+		content: var(--value, '')
+		width: calc(var(--size, 200) * 1px - 10px)
+		height: calc(var(--size, 200) * 1px - 10px)
+		border-radius: 100%
+		background: #fff
+		position: absolute
+		transform: translateX(-50%) translateY(-50%)
+		left: 50%
+		top: 50%
+		color: #9d9d9d
+		text-align: center
+		font-size: 40px
+		line-height: calc(var(--size, 200) * 1px - 10px)
+		font-family: Lato Light, sans serif
+.multisectoral
+	&:after
+		width: calc(var(--size, 200) * 1px - 30px)
+		height: calc(var(--size, 200) * 1px - 30px)

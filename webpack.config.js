@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack')
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
@@ -65,6 +66,10 @@ module.exports = {
     new ExtractTextPlugin({filename: 'css/main.css'}),
     new HtmlWebpackPlugin({
     template: './src/pug/index.pug'
+    }),
+    new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery"
     }),
   ]
 };
