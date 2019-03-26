@@ -1,0 +1,13 @@
+.form-elements
+	h1.form-elements-title FORM ELEMENTS
+	.form
+		form(method="post" id="myForm")
+			.input-name-wrapper.input-error
+				input(type="text" class="input input-name" placeholder="Your Name")
+			.input-email-wrapper.input-success
+				input(type="text" class="input input-email" placeholder="Your Email")
+			textarea(name="message", cols="28", rows="4" placeholder="Your Message" class="textarea")
+			.button-wrapper
+				.button.float-button-light.button_big.button_green.button-border_green SUBMIT
+	include ./components/toggles/toggles
+	include ./components/tick-boxes/tick-boxes

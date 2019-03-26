@@ -1,0 +1,41 @@
+.tick-boxes
+	float: right
+	width: 289px
+	.tick-boxes-title
+		letter-spacing: 0.05em
+		padding-left: 10px
+		margin-top: 0
+	.tick-boxes-wrapper
+		padding-top: 20px
+		padding-left: 115px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		.tick-box
+			margin-right: 16px
+.tick-box
+	content: ''
+	display: block
+	width: 24px
+	height: 24px
+	background-color: #4eb7a8
+	border-radius: 50%
+	position: relative
+	cursor: pointer
+	&:before
+		content: ''
+		display: block
+		transform: rotate(-44deg)
+		width: 10px
+		height: 4px
+		border-left: 2px solid #fff
+		border-bottom: 2px solid #fff
+		position: absolute
+		top: 7px
+		left: 6px
+#checkbox:checked + .tick-box
+	background-color: #e5e5e5
+	&:before
+		border-color: #c0c0c0
