@@ -5,9 +5,9 @@ const webpack = require('webpack')
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve('./dist'),
     filename: 'main.js',
-    publicPath: path.resolve(__dirname, 'dist')
+    // publicPath: path.resolve('./dist')
   },
   module: {
     rules: [

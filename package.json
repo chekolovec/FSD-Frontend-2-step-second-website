@@ -2,12 +2,11 @@
   "name": "fsd-frontend-2-step-second-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development ./src/index.js --output ./dist/main.js",
-    "start": "webpack --mode development ./src/index.js --output ./dist/main.js --watch",
-    "build": "webpack --mode production ./src/index.js --output ./dist/main.js"
+    "dev": "webpack --mode development",
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
