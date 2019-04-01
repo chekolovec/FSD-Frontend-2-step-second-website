@@ -1,0 +1,100 @@
+@import 'fonts'
+.user-profile-wrapper
+	width: 283px
+	float: right
+	.user-profile-title
+		padding-bottom: 16px
+		letter-spacing: 0.05em
+	.user-profile
+		margin-bottom: 24px
+.user-profile
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding-left: 17px
+	.user-profile__picture
+		width: 85px
+		height: 85px
+		border-radius: 50%
+		border: 5px solid #e5e5e5
+		background: url('../img/user-pic-1.png') center center no-repeat
+		background-size: cover
+	.user-profile__info
+		width: 164px
+		height: 69px
+		padding-top: 7px
+		padding-bottom: 15px
+		text-align: center
+		margin-left: 9px
+		border-radius: 5px
+		margin-right: -2px
+		margin-top: 4px
+		position: relative
+		&::after
+			content: ''
+			display: block
+			border: 10px solid transparent
+			position: absolute
+			top: 35px
+			left: -16px
+		.user-profile__name
+			margin: 0
+			padding: 0
+			font-family: Lato Regular, sans serif
+			font-size: 18px
+			color: #fff
+		.user-profile__position
+			margin: 0
+			padding: 0
+			font-family: Lato Black, sans serif
+			font-size: 11px
+			letter-spacing: .1em
+			padding-bottom: 11px
+		.social-links
+			font-family: Font-Awesome-Brands-Regular-400
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			padding-left: 36px
+			.social-facebook::before
+				content: "\f39e"
+				font-size: 22px
+				display: inline-block
+				padding-right: 20px
+			.social-twitter::before
+				content: "\f099"
+				font-size: 26px
+				display: inline-block
+				padding-right: 17px
+			.social-dribble::before
+				content: "\f17d"
+				font-size: 23px
+.user-profile_grey
+	.user-profile__info
+		background: #e5e5e5
+		&::after
+			border-right: 10px solid #e5e5e5
+		.user-profile__name
+			color: #e75735
+		.user-profile__position
+			color: #4f4f4f
+		.social-links
+			.social-twitter
+				color: #e75735
+
+.user-profile_green
+	.user-profile__picture
+		background: url('../img/user-pic-2.png') center center no-repeat
+	.user-profile__info
+		background: #4eb7a8
+		&::after
+			border-right: 10px solid #4eb7a8
+		.user-profile__name,
+		.user-profile__position,
+		.social-links
+			color: #fff
+

@@ -1,0 +1,1 @@
+$('#input-search_failed').attr('placeholder', 'I’ve not found what I’m looking for...');

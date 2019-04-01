@@ -1,0 +1,95 @@
+@import 'fonts'
+.calendar
+	#today
+		width: 278px
+		height: 93px
+		background: #e75735
+		border-radius: 3px 3px 0 0
+		font-family: Lato Light, sans serif
+		font-size: 80px
+		color: #fff
+		padding-top: 15px
+		text-align: center
+	.ui-datepicker
+		padding: 0
+		width: 278px
+		.ui-datepicker-calendar
+			margin-bottom: 0
+		.ui-datepicker-header
+			background: #d54c2c
+		.ui-datepicker-header
+			height: 37px
+			.ui-datepicker-title
+				line-height: 37px
+				font-family: Lato Light, sans serif
+				font-size: 24px
+				color: #fff
+			.ui-datepicker-next
+				cursor: pointer
+				&::after
+					content: ''
+					display: block
+					width: 10px
+					height: 10px
+					position: absolute
+					border-bottom: 2px solid #fff
+					border-right: 2px solid #fff
+					transform: rotate(-45deg)
+					top: 14px
+			.ui-datepicker-prev
+				cursor: pointer
+				&::after
+					content: ''
+					display: block
+					width: 10px
+					height: 10px
+					position: absolute
+					border-bottom: 2px solid #fff
+					border-right: 2px solid #fff
+					transform: rotate(135deg)
+					top: 14px
+					left: 13px
+		.ui-datepicker-days-names
+			background: #e75735
+			height: 28px
+			font-size: 10px
+			padding: 0
+			font-family: Lato Black, sans serif
+			font-size: 9px
+			color: #fff
+			text-transform: uppercase
+		.ui-datepicker-days-cell
+			background: #f2f2f2
+			outline: 1px solid #fff
+			height: 38px
+		.ui-datepicker-days-cells
+		.ui-state-default
+			text-align: center
+			font-family: Source Sans Pro
+			font-size: 20px
+			color: #868686
+		.ui-datepicker-today,
+		.ui-datepicker-current-day
+			background: #e75735
+			.ui-state-default
+				color: #fff
+		.ui-datepicker-other-month
+			.ui-state-default
+				color: #fff
+		.ui-datepicker-buttonpane
+			margin: 0
+			padding: 0
+			.ui-datepicker-current
+				border: 0
+				margin: 0
+				width: 100%
+				text-align: left
+				font-family: Lato Black, sans serif
+				font-size: 13px
+				text-transform: uppercase
+				padding-top: 17px
+				padding-left: 20px
+				padding-bottom: 15px
+				border-radius: 0 0 5px 5px
+
+

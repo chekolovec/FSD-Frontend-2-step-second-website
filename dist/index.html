@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>FSD-Frontend-2-step-second-website</title>
-<link href="css/main.css" rel="stylesheet"></head>
+<link href="C:\Users\Tema\Desktop\Github\FSD-Frontend-2-step-second-website\dist/css/main.css" rel="stylesheet"></head>
 <body>
   <div class="template">
     <div class="container">
@@ -119,13 +119,124 @@
 <div class="tick-boxes">
   <h1 class="tick-boxes-title">TICK BOXES</h1>
   <div class="tick-boxes-wrapper">
-    <input type="checkbox" id="checkbox" hidden>
-    <label class="tick-box" for="checkbox"></label>
-    <input type="checkbox" id="checkbox" hidden checked>
-    <label class="tick-box" for="checkbox"></label>
+    <input type="checkbox" id="checkbox-1" hidden>
+    <label class="tick-box" for="checkbox-1" id="tick-box-1"></label>
+    <input type="checkbox" id="checkbox-2" hidden checked>
+    <label class="tick-box" for="checkbox-2" id="tick-box-2"></label>
   </div>
 </div>
 </div>
+      <div class="search-user-wrapper">
+<div class="search-dropdown">
+  <h1 class="search-dropdown-title">SEARCH / DROP DOWN</h1>
+  <div class="search-form">
+    <input class="input-search" type="search" placeholder="Search">
+    <button class="search-submit" type="submit"></button>
+  </div>
+  <div class="search-form">
+    <input class="input-search input-search_failed" type="search" placeholder="Search" id="input-search_failed">
+    <button class="search-submit" type="submit"></button>
+  </div>
+  <div class="select-wrapper">
+    <select class="select" name="select">
+      <option value="" hidden disabled selected>Choose An Option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+      <option value="option4">Option 4</option>
+    </select>
+  </div>
+</div>
+<div class="user-profile-wrapper">
+  <h1 class="user-profile-title">USER PROFILE</h1>
+  <div class="user-profile user-profile_grey">
+    <div class="user-profile__picture"></div>
+    <div class="user-profile__info">
+      <h2 class="user-profile__name">John Smith</h2>
+      <p class="user-profile__position">UX DESIGNER</p>
+      <div class="social-links">
+        <div class="social-facebook"></div>
+        <div class="social-twitter"></div>
+        <div class="social-dribble"></div>
+      </div>
     </div>
   </div>
-<script type="text/javascript" src="main.js"></script></body>
+  <div class="user-profile user-profile_green">
+    <div class="user-profile__picture"></div>
+    <div class="user-profile__info">
+      <h2 class="user-profile__name">Sarah Brown</h2>
+      <p class="user-profile__position">DEVELOPER</p>
+      <div class="social-links">
+        <div class="social-facebook"></div>
+        <div class="social-twitter social-twitter_orange"></div>
+        <div class="social-dribble"></div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="news-events__wrapper">
+        <h1 class="news-events__title">NEWS  &  EVENTS</h1>
+<div class="news-block">
+  <div class="news-block__image"></div>
+  <div class="news-block__text-bg">
+    <h2 class="news-block__title">It’s all going downhill</h2>
+    <div class="news-block__date">24  AUGUST  2013</div>
+    <p class="news-block__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.</p>
+  </div>
+</div>
+<div class="event-block">
+  <div class="event-block__image"></div>
+  <div class="event-block__text-bg">
+    <div class="event-block__date">
+      <div class="event-block__date_day">24</div>
+      <div class="event-block__date_month">Aug</div>
+    </div>
+    <h2 class="event-block__title">THIS IS THE TITLE</h2>
+    <p class="event-block__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="event-block__button button button_big button_orange button-border_green">ADD TO CALENDAR</div>
+  </div>
+</div>
+      </div>
+      <div class="location__wrapper">
+        <h1 class="location__title">LOCATION</h1>
+<div class="location">
+  <div id="map"></div>
+  <div class="location__address">
+    <div class="info">Meet us!</div>
+    <div class="address">1259  CALIFORNIA ST<br>SAN FRANCISCO, CA</div><a class="icon-pin" href="#"></a><a class="icon-my-location" href="#"></a>
+  </div>
+</div>
+      </div>
+      <div class="calendar-messaging-wrapper">
+        <div class="calendar-wrapper">
+          <h1 class="calendar__title">CALENDAR</h1>
+<div class="calendar">
+  <div id="datepicker-container">
+    <div id="today"></div>
+  </div>
+</div>
+        </div>
+        <div class="messaging-wrapper">
+          <h1 class="messaging__title">MESSAGING</h1>
+<div class="messenger">
+  <div class="messenger__name">Sarah Brown</div>
+  <div class="messenger__container">
+    <div class="messenger__picture"></div>
+    <div class="messenger__arrow"></div>
+    <div id="messenger__message"> 
+      <p>Hey! So are we cool to meet at the art gallery? Say 8pm</p>
+    </div>
+    <textarea class="messenger__input" id="messageToSend" placeholder="Yeah that sounds great. See you then."></textarea>
+    <div class="button button_green button_big button-border_green" id="messenger__button">REPLY</div>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="video-wrapper">
+        <h1 class="video__title">VIDEO</h1><iframe width="594" height="336" src="https://www.youtube.com/embed/rPmGtZAUxNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0D_HwilomS9jYCJaH_krzdGztthiT5UM&amp;callback=initMap"></script>
+<script type="text/javascript" src="C:\Users\Tema\Desktop\Github\FSD-Frontend-2-step-second-website\dist/main.js"></script></body>

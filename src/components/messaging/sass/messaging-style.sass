@@ -1,0 +1,108 @@
+@import 'fonts'
+.messenger
+	width: 288px
+	border-radius: 5px
+	background: #f2f2f2
+	padding-bottom: 24px
+	position: relative
+	.messenger__name
+		text-align: center
+		background: #4eb7a8
+		width: 100%
+		height: 80px
+		border-radius: 5px 5px 0 0
+		font-family: Source Sans Pro Light, sans serif
+		font-size: 34px
+		color: #fff
+		padding-top: 15px
+		&::after
+			background: #46ab9d
+			content: ''
+			display: block
+			width: 100%
+			height: 35px
+			margin-top: 23px
+	.messenger__container
+		width: 246px
+		margin: 0 auto
+		.messenger__picture
+			width: 84px
+			height: 84px
+			background: url('../img/user-pic-2.png') center center no-repeat
+			background-size: contain
+			margin: 0 auto
+			border: 4px solid #e5e5e5
+			border-radius: 50%
+			margin-top: -25px
+			transform: translateX(-4px)
+			margin-bottom: 14px
+			position: relative
+			&::before
+				content: ''
+				width: 20px
+				height: 22px
+				display: block
+				background: url('../img/chat-icon.png') center center no-repeat
+				background-size: contain
+				position: absolute
+				bottom: -1px
+				left: -71px
+				cursor: pointer
+			&::after
+				content: ''
+				width: 25px
+				height: 25px
+				display: block
+				background: url('../img/camera-icon.png') center center no-repeat
+				background-size: contain
+				position: absolute
+				bottom: 0
+				right: -79px
+				cursor: pointer
+		.messenger__arrow
+			display: block
+			border: 7px solid transparent
+			border-bottom: 7px solid #fff
+			position: absolute
+			top: 0
+			top: 163px
+			left: 132px	
+		#messenger__message
+			width: 100%
+			height: 69px
+			overflow: auto
+			background: #fff
+			border-radius: 10px
+			margin-bottom: 17px
+			font-family: Lato Bold, sans serif
+			font-size: 12px
+			box-sizing: border-box
+			padding-left: 19px
+			padding-right: 35px
+			padding-top: 5px
+			letter-spacing: .07em
+			color: #868686
+			position: relative
+		.messenger__input
+			width: 100%
+			height: 88px
+			background: #e5e5e5
+			margin-bottom: 12px
+			border: 3px solid #fff
+			border-radius: 5px
+			box-sizing: border-box
+			font-family: Lato Bold, sans serif
+			font-size: 12px
+			color: #777777
+			resize: none
+			padding-top: 16px
+			padding-left: 18px
+			letter-spacing: .08em
+		#messenger__button
+			width: 100%
+			box-sizing: border-box
+			padding-left: 27px
+			text-align: center
+		.myMessage
+			text-align: right
+			color: #4eb7a8
