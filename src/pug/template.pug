@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title FSD-Frontend-2-step-second-website
+	body
+		.template
+			.container
+				include ../components/buttons/buttons
+				include ../components/arrows/arrows
+				include ../components/charts/charts
+				include ../components/sliders/sliders
+				include ../components/stages/stages
+				include ../components/form-elements/form-elements
+				.search-user-wrapper
+					include ../components/search-dropdown/search-dropdown
+					include ../components/user-profile/user-profile
+				.news-events__wrapper
+					h1.news-events__title NEWS  &  EVENTS
+					include ../components/news-events/news-events
+				.location__wrapper
+					h1.location__title LOCATION
+					include ../components/location/location
+				.calendar-messaging-wrapper
+					.calendar-wrapper
+						h1.calendar__title CALENDAR
+						include ../components/calendar/calendar
+					.messaging-wrapper
+						h1.messaging__title MESSAGING
+						include ../components/messaging/messaging
+				.video-wrapper
+					h1.video__title VIDEO
+					include ../components/video/video
+		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0D_HwilomS9jYCJaH_krzdGztthiT5UM&callback=initMap")

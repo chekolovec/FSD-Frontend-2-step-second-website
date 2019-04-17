@@ -1,0 +1,18 @@
+mixin news(options)
+	.news-block
+		.news-block__image
+		.news-block__text-bg
+			h2.news-block__title= options.title
+			.news-block__date= options.date || ''
+			p.news-block__info= options.info
+
+mixin events(options)
+	.event-block
+		.event-block__image
+		.event-block__text-bg
+			.event-block__date
+				.event-block__date_day= options.day
+				.event-block__date_month= options.month
+			h2.event-block__title= options.title
+			p.event-block__info= options.info
+			.event-block__button.button.button_big.button_orange.button-border_green= options.btnText

@@ -1,9 +1,5 @@
-.messenger
-	.messenger__name Sarah Brown
-	.messenger__container
-		.messenger__picture
-		.messenger__arrow
-		#messenger__message 
-			p Hey! So are we cool to meet at the art gallery? Say 8pm
-		textarea(id="messageToSend" placeholder="Yeah that sounds great. See you then.").messenger__input
-		#messenger__button.button.button_green.button_big.button-border_green REPLY
+include messaging-mixin
++messenger({name: 'Консультант', message: 'Оставьте свое сообщение в этой форме', btnText: 'ОТПРАВИТЬ'})
+
+
+

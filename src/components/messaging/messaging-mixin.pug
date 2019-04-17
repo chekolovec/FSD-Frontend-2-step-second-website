@@ -1,0 +1,10 @@
+mixin messenger(options)
+	.messenger
+		.messenger__name= options.name
+		.messenger__container
+			.messenger__picture
+			.messenger__arrow
+			#messenger__message 
+				p= options.message
+			textarea(id="messageToSend" placeholder="Ваше сообщение").messenger__input
+			#messenger__button.button.button_green.button_big.button-border_green= options.btnText

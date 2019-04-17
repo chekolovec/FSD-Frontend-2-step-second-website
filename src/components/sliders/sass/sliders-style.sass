@@ -3,7 +3,7 @@
 	padding-bottom: 49px
 	.sliders-title
 		padding-bottom: 33px
-	.slider-orange
+	.slider1
 		width: 240px
 	.sliders-wrapper
 		display: -webkit-flex
@@ -13,17 +13,17 @@
 		display: flex
 		justify-content: space-between
 		padding-left: 5px
-		.slider-orange
+		.slider1
 			margin-right: 88px
 
-.slider1
+.slider-type1
 	width: 240px
 	height: 5px
-	background: #eee
 	position: relative
 	margin: 0 auto
 	padding: 0 10px
 	border-radius: 2px	
+	background: #eee
 	.ui-slider-handle 
 		width: 20px
 		height: 20px
@@ -31,7 +31,6 @@
 		top: -7px
 		margin-left: -12px
 		z-index: 200
-		background: #e75735
 		-webkit-border-radius: 50px
 		-moz-border-radius: 50px
 		border-radius: 50px
@@ -43,7 +42,6 @@
 		position: absolute
 		top: -32px
 		left: -7px
-		background: #e75735
 		color: #000
 		width: 35px
 		height: 24px
@@ -60,14 +58,20 @@
 			left: 13px
 			border: 4px solid transparent
 			border-top: 4px solid #e75735
-.slider2
+.slider-orange
+	.ui-slider-handle
+		background: #e75735
+	#slider-result1
+		background: #e75735
+
+.slider-type2
 	width: 240px
 	height: 5px
-	background: #eee
 	position: relative
 	margin: 0 auto
 	padding: 0 10px
-	border-radius: 2px
+	border-radius: 2px	
+	background: #eee
 	.ui-slider-handle 
 		width: 20px
 		height: 20px
@@ -75,7 +79,6 @@
 		top: -7px
 		margin-left: -12px
 		z-index: 200
-		background: #4eb7a8
 		-webkit-border-radius: 50%
 		-moz-border-radius: 50%
 		border-radius: 50%
@@ -105,3 +108,10 @@
 		top: 1px
 		position: absolute
 		border-radius: 5px
+.slider-green
+	.ui-slider-handle
+		background: #4eb7a8
+	#slider-result1	
+		background: #4eb7a8
+		&:after
+			border-top: 4px solid #4eb7a8

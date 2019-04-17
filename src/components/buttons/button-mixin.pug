@@ -1,0 +1,5 @@
+mixin button(options)
+	-
+		var borderColor = options.borderColor || options.color
+		var buttonColor = 'button-color_'+options.buttonColor || ''
+	div(class="button button_"+options.size+" button_"+options.color+" button-border_"+borderColor+' '+buttonColor)= options.text

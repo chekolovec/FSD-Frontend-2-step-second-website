@@ -1,242 +1,95 @@
 <!DOCTYPE html><!DOCTYPE html>
-<html lang="en"></html>
-<head>
-  <meta charset="UTF-8">
-  <title>FSD-Frontend-2-step-second-website</title>
-<link href="css/main.css" rel="stylesheet"></head>
-<body>
-  <div class="template">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FSD-Frontend-2-step-second-website</title>
+    <meta name="viewport" content="width=device-width">
+  <link href="css/main.css" rel="stylesheet"></head>
+  <body>
     <div class="container">
-<div class="buttons">
-  <h1 class="buttons__title">STANDARD BUTTONS</h1>
-  <ul class="template-buttons__wrapper">
-    <li class="button float-button-light button_small button_green">BUTTON</li>
-    <li class="button float-button-light button_big button_green">BUTTON</li>
-    <li class="button float-button-light button_big button_orange">BUTTON</li>
-    <li class="button float-button-light button_small button_orange">BUTTON</li>
-    <li class="button float-button-light button_small button_green button-border_green">BUTTON</li>
-    <li class="button float-button-light button_big button_green button-border_green">BUTTON</li>
-    <li class="button float-button-light button_big button_orange button-border_orange">BUTTON</li>
-    <li class="button float-button-light button_small button_orange button-border_orange">BUTTON</li>
-    <li class="button float-button-light button_small button_white button-border_green button-color_green">BUTTON</li>
-    <li class="button float-button-light button_big button_white button-border_green button-color_green">BUTTON</li>
-    <li class="button float-button-light button_big button_white button-border_orange button-color_orange">BUTTON</li>
-    <li class="button float-button-light button_small button_white button-border_orange button-color_orange">BUTTON</li>
-  </ul>
-</div>
-<div class="arrows">
-  <h1 class="arrows-title">ARROW BUTTONS</h1>
-  <ul class="arrows-wrapper">
-    <li class="arrow-wrapper"><a class="arrow arrow-left arrow-white"></a></li>
-    <li class="arrow-wrapper"><a class="arrow arrow-right arrow-white"></a></li>
-    <li class="arrow-wrapper"><a class="arrow arrow-left arrow-grey"></a></li>
-    <li class="arrow-wrapper"><a class="arrow arrow-right arrow-grey"></a></li>
-    <li class="arrow-wrapper"><a class="arrow arrow-left arrow-green"></a></li>
-    <li class="arrow-wrapper"><a class="arrow arrow-right arrow-green"></a></li>
-  </ul>
-</div>
-<div class="charts">
-  <h1 class="charts-title">PERCENTAGES / PIE CHART</h1>
-  <ul class="charts-wrapper">
-    <li class="pie" style="--value: &quot;0&quot;; --size: 100">
-      <div class="pie__segment" style="--offset: 0; --value: 0; --over50: 0; --bg: #e75735;"></div>
-    </li>
-    <li class="pie" style="--value: &quot;38&quot;; --size: 100">
-      <div class="pie__segment" style="--offset: 0; --value: 38; --over50: 0; --bg: #e75735;"></div>
-    </li>
-    <li class="pie" style="--value: &quot;62&quot;; --size: 100">
-      <div class="pie__segment" style="--offset: 0; --value: 62; --over50: 1; --bg: #e75735;"></div>
-    </li>
-    <li class="pie" style="--value: &quot;89&quot;; --size: 100">
-      <div class="pie__segment" style="--offset: 0; --value: 89; --over50: 1; --bg: #e75735;"></div>
-    </li>
-    <li class="pie multisectoral" style="--size: 100">
-      <div class="pie__segment" style="--offset: 0; --value: 15; --over50: 0; --bg: #747474;"></div>
-      <div class="pie__segment" style="--offset: 15; --value: 20; --over50: 0; --bg: #e75735;"></div>
-      <div class="pie__segment" style="--offset: 35; --value: 40; --over50: 0; --bg: #4eb7a8;"></div>
-      <div class="pie__segment" style="--offset: 75; --value: 25; --over50: 0; --bg: #e5e5e5;"></div>
-    </li>
-  </ul>
-</div>
-<div class="sliders">
-  <h1 class="sliders-title">SLIDERS</h1>
-  <div class="sliders-wrapper">
-    <div class="slider-orange">
-      <div class="slider1"><a class="ui-slider-handle" href="#">
-          <div id="slider-result1">0</div></a>
-        <input id="slider1" name="slider1" type="hidden">
-      </div>
-    </div>
-    <div class="slider-green">
-      <div class="slider2"><a class="ui-slider-handle" href="#"></a>
-        <div class="percentage">
-          <div class="percent">0</div>
-          <div class="percent">25</div>
-          <div class="percent">50</div>
-          <div class="percent">75</div>
-          <div class="percent">100</div>
-        </div>
-        <input id="slider2" name="slider2" type="hidden">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="stages">
-  <h1 class="stages-title">STAGES</h1>
-  <div class="stages-slider">
-    <div class="stages-slider-1"></div>
-  </div>
-</div>
-<div class="form-elements">
-  <h1 class="form-elements-title">FORM ELEMENTS</h1>
-  <div class="form">
-    <form method="post" id="myForm">
-      <div class="input-name-wrapper input-error">
-        <input class="input input-name" type="text" placeholder="Your Name">
-      </div>
-      <div class="input-email-wrapper input-success">
-        <input class="input input-email" type="text" placeholder="Your Email">
-      </div>
-      <textarea class="textarea" name="message" cols="28" rows="4" placeholder="Your Message"></textarea>
-      <div class="button-wrapper">
-        <div class="button float-button-light button_big button_green button-border_green">SUBMIT</div>
-      </div>
-    </form>
-  </div>
-<div class="toggles">
-  <h1 class="toggles-title">TOGGLES</h1>
-  <div class="toggles-wrapper">
-    <div class="toggle"><input type="checkbox" class="toggle-checkbox">
-      <div class="toggle-knobs"></div>
-      <div class="toggle-layer"></div>
-    </div>
-    <div class="toggle"><input type="checkbox" class="toggle-checkbox" checked>
-      <div class="toggle-knobs"></div>
-      <div class="toggle-layer"></div>
-    </div>
-  </div>
-</div>
-<div class="tick-boxes">
-  <h1 class="tick-boxes-title">TICK BOXES</h1>
-  <div class="tick-boxes-wrapper">
-    <input type="checkbox" id="checkbox-1" hidden>
-    <label class="tick-box" for="checkbox-1" id="tick-box-1"></label>
-    <input type="checkbox" id="checkbox-2" hidden checked>
-    <label class="tick-box" for="checkbox-2" id="tick-box-2"></label>
-  </div>
-</div>
-</div>
-      <div class="search-user-wrapper">
-<div class="search-dropdown">
-  <h1 class="search-dropdown-title">SEARCH / DROP DOWN</h1>
-  <div class="search-form">
-    <input class="input-search" type="search" placeholder="Search">
-    <button class="search-submit" type="submit"></button>
-  </div>
-  <div class="search-form">
-    <input class="input-search input-search_failed" type="search" placeholder="Search" id="input-search_failed">
-    <button class="search-submit" type="submit"></button>
-  </div>
-  <div class="select-wrapper">
-    <select class="select" name="select">
-      <option value="" hidden disabled selected>Choose An Option</option>
-      <option value="option1">Option 1</option>
-      <option value="option2">Option 2</option>
-      <option value="option3">Option 3</option>
-      <option value="option4">Option 4</option>
-    </select>
-  </div>
-</div>
-<div class="user-profile-wrapper">
-  <h1 class="user-profile-title">USER PROFILE</h1>
-  <div class="user-profile user-profile_grey">
-    <div class="user-profile__picture"></div>
-    <div class="user-profile__info">
-      <h2 class="user-profile__name">John Smith</h2>
-      <p class="user-profile__position">UX DESIGNER</p>
-      <div class="social-links">
-        <div class="social-facebook"></div>
-        <div class="social-twitter"></div>
-        <div class="social-dribble"></div>
-      </div>
-    </div>
-  </div>
-  <div class="user-profile user-profile_green">
-    <div class="user-profile__picture"></div>
-    <div class="user-profile__info">
-      <h2 class="user-profile__name">Sarah Brown</h2>
-      <p class="user-profile__position">DEVELOPER</p>
-      <div class="social-links">
-        <div class="social-facebook"></div>
-        <div class="social-twitter social-twitter_orange"></div>
-        <div class="social-dribble"></div>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-      <div class="news-events__wrapper">
-        <h1 class="news-events__title">NEWS  &  EVENTS</h1>
-<div class="news-block">
-  <div class="news-block__image"></div>
-  <div class="news-block__text-bg">
-    <h2 class="news-block__title">It’s all going downhill</h2>
-    <div class="news-block__date">24  AUGUST  2013</div>
-    <p class="news-block__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.</p>
-  </div>
-</div>
-<div class="event-block">
-  <div class="event-block__image"></div>
-  <div class="event-block__text-bg">
-    <div class="event-block__date">
-      <div class="event-block__date_day">24</div>
-      <div class="event-block__date_month">Aug</div>
-    </div>
-    <h2 class="event-block__title">THIS IS THE TITLE</h2>
-    <p class="event-block__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <div class="event-block__button button button_big button_orange button-border_green">ADD TO CALENDAR</div>
-  </div>
-</div>
-      </div>
-      <div class="location__wrapper">
-        <h1 class="location__title">LOCATION</h1>
-<div class="location">
-  <div id="map"></div>
-  <div class="location__address">
-    <div class="info">Meet us!</div>
-    <div class="address">1259  CALIFORNIA ST<br>SAN FRANCISCO, CA</div><a class="icon-pin" href="#"></a><a class="icon-my-location" href="#"></a>
-  </div>
-</div>
-      </div>
-      <div class="calendar-messaging-wrapper">
-        <div class="calendar-wrapper">
-          <h1 class="calendar__title">CALENDAR</h1>
+      <header class="header"><a class="header-logo" href="./index.html"></a>
+                <nav class="header-menu"><a class="link link-main" href="./index.html">Главная</a><a class="link link-second" href="./projects.html">Новостройки</a><a class="link link-third" href="#">Третья</a><a class="link link-fourth" href="#">Четвертая</a></nav>
+      </header>
+      <aside class="sidebar">
+                <div class="event-block">
+                  <div class="event-block__image"></div>
+                  <div class="event-block__text-bg">
+                    <div class="event-block__date">
+                      <div class="event-block__date_day"></div>
+                      <div class="event-block__date_month"></div>
+                    </div>
+                    <h2 class="event-block__title">Жилой комплекс &quot;Ижора Парк&quot;, 4 очередь</h2>
+                    <p class="event-block__info">Адрес новостройки: СПб, п. Металлострой, ул. Полевая / ул. Садовая</p>
+                    <div class="event-block__button button button_big button_orange button-border_green">Подробнее</div>
+                  </div>
+                </div><br>
+                <div class="event-block">
+                  <div class="event-block__image"></div>
+                  <div class="event-block__text-bg">
+                    <div class="event-block__date">
+                      <div class="event-block__date_day"></div>
+                      <div class="event-block__date_month"></div>
+                    </div>
+                    <h2 class="event-block__title">Жилой комплекс &quot;Десяткино 2.0&quot;, 1 очередь</h2>
+                    <p class="event-block__info">Адрес новостройки: Лен. область, Всеволожский р-н, земли САОЗТ «Ручьи», участок №57</p>
+                    <div class="event-block__button button button_big button_orange button-border_green">Подробнее</div>
+                  </div>
+                </div><br>
+        <hr><br>
 <div class="calendar">
   <div id="datepicker-container">
     <div id="today"></div>
   </div>
 </div>
+      </aside>
+      <div class="content">
+        <div class="messenger-wrapper">
+          <div class="messenger-button">Напишите нам сообщение</div>
+                    <div class="messenger">
+                      <div class="messenger__name">Консультант</div>
+                      <div class="messenger__container">
+                        <div class="messenger__picture"></div>
+                        <div class="messenger__arrow"></div>
+                        <div id="messenger__message"> 
+                          <p>Оставьте свое сообщение в этой форме</p>
+                        </div>
+                        <textarea class="messenger__input" id="messageToSend" placeholder="Ваше сообщение"></textarea>
+                        <div class="button button_green button_big button-border_green" id="messenger__button">ОТПРАВИТЬ</div>
+                      </div>
+                    </div>
         </div>
-        <div class="messaging-wrapper">
-          <h1 class="messaging__title">MESSAGING</h1>
-<div class="messenger">
-  <div class="messenger__name">Sarah Brown</div>
-  <div class="messenger__container">
-    <div class="messenger__picture"></div>
-    <div class="messenger__arrow"></div>
-    <div id="messenger__message"> 
-      <p>Hey! So are we cool to meet at the art gallery? Say 8pm</p>
-    </div>
-    <textarea class="messenger__input" id="messageToSend" placeholder="Yeah that sounds great. See you then."></textarea>
-    <div class="button button_green button_big button-border_green" id="messenger__button">REPLY</div>
-  </div>
-</div>
+        <div class="news-wrapper">
+          <h1 class="news-title news-title_main"></h1>
+          <p class="news-date">22.01.2019</p>
+          <h2 class="news-title">Офис строительной компании «Норманн» переезжает</h2>
+          <p class="news-text">С 21 января 2019 года основной офис строительной компании «Норманн»  переезжает  по адресу: СПб, Пушкинский район,  поселок Шушары , Первомайская улица 5к2.<br>Прием клиентов компании, так же осуществляется по указанному адресу в часы работы отдела сервиса:<br>СР с 9.30 до 18.00 - приём звонков<br>ЧТ с 9.30 до 18.00 - приёмный день (по предварительной записи по телефонам : 648-00-11 , 648-00-22)<br>ПН, ВТ, ПТ работа с документами, приёма клиентов и звонков нет<br>СБ-ВС выходной<br>Встречи руководства с инициативными группами дольщиков будут проходить на строительных площадках объектов по согласованию.<br>В связи с переездом, а также налаживанием работы офисных систем связи, просим присылать Ваши вопросы на электронный адрес отдела сервиса : os@normann.ru. Просим извинения за временные неудобства.</p>
+        </div><br>
+        <hr><br>
+        <div class="news-wrapper">
+          <p class="news-date">21.12.2018</p>
+          <h2 class="news-title">Реквизиты и документы для перечисления платежей</h2>
+          <p class="news-text">В связи с отзывом у ПАО «Донхлеббанк» лицензии на осуществление банковских операций (Приказ Банка России от 21.12.2018 № ОД-3269) прием платежей в адрес застройщиков по ДДУ с рассрочкой платежа невозможны. Реквизиты и документы для перечисления платежей будут направлены участникам долевого строительства после открытия новых расчетных счетов.</p>
+        </div><br>
+        <hr><br>
+        <div class="news-wrapper">
+          <p class="news-date">14.12.2018</p>
+          <h2 class="news-title">Срок разрешения на строительство по ЖК «Десяткино» 2 очередь продлен</h2>
+          <p class="news-text">Срок разрешения на строительство по ЖК «Десяткино» 2 очередь продлен 31.07.2018 до 31 декабря 2018г.<br>Договор  страхования гражданской ответственности застройщика  с  СК «РЕСПЕКТ» № ГОЗ-29-0142/18  от 30.07.2018  заключен до 31.12.2018г.</p>
+        </div><br>
+        <hr><br>
+        <div class="news-wrapper">
+          <p class="news-date">16.07.2018</p>
+          <h2 class="news-title">Подрядчик приступил к выполнению работ</h2>
+          <p class="news-text">Компания ООО "Спецстрой" приступила к завершению устройства стяжки на объекте ЖК «Десяткино» - 2 очередь строительства. Выполняется монтаж гидроизоляции в санузлах с 15-18 этаж.</p>
+        </div><br>
+        <hr><br>
+        <div class="news-wrapper">
+          <p class="news-date">13.07.2018</p>
+          <h2 class="news-title">Поставка оборудования</h2>
+          <p class="news-text">На объекте ЖК «Три Апельсина» - 2 очередь строительства подрядчик, ООО «Санкт-Петербургский Лифтовой завод», выполняющий комплекс работ по поставке и монтажу лифтового оборудования, закончил подготовительные работы: выполнен монтаж настилов в лифтовых шахтах, монтаж настила в лифтовой, установлена дверь в машинное помещение; произведены замеры лифтовых шахт.<br>03.07.2018 на объект завезена первая партия лифтового оборудования.</p>
         </div>
       </div>
-      <div class="video-wrapper">
-        <h1 class="video__title">VIDEO</h1><iframe width="594" height="336" src="https://www.youtube.com/embed/rPmGtZAUxNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <footer class="footer"></footer>
     </div>
-  </div>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0D_HwilomS9jYCJaH_krzdGztthiT5UM&amp;callback=initMap"></script>
-<script type="text/javascript" src="main.js"></script></body>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>

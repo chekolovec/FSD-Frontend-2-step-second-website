@@ -1,7 +1,6 @@
 // Определяем переменную map
 var map;
 // Функция initMap которая отрисует карту на странице
-import img from '../img/marker-icon.png'
 window.initMap = function() {
 
     // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
@@ -18,4 +17,4 @@ window.initMap = function() {
     title: 'Hello World!',
     icon: './img/marker-icon.png'
     });
-}
+};

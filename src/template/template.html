@@ -1,0 +1,267 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FSD-Frontend-2-step-second-website</title>
+  <link href="css/main.css" rel="stylesheet"></head>
+  <body>
+    <div class="template">
+      <div class="container">
+        <div class="buttons">
+          <h1 class="buttons__title">STANDARD BUTTONS</h1>
+          <div class="template-buttons__wrapper">
+            <div class="button-wrapper">
+                      <div class="button button_small button_green button-border_none button-color_undefined">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_big button_green button-border_none button-color_undefined">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_big button_orange button-border_none button-color_undefined">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_small button_orange button-border_none button-color_undefined">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_small button_green button-border_green button-color_undefined">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_big button_green button-border_green button-color_undefined">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_big button_orange button-border_orange button-color_undefined">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_small button_orange button-border_orange button-color_undefined">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_small button_white button-border_green button-color_green">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_big button_white button-border_green button-color_green">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_big button_white button-border_orange button-color_orange">BUTTON</div>
+            </div>
+            <div class="button-wrapper">
+                      <div class="button button_small button_white button-border_orange button-color_orange">BUTTON</div>
+            </div>
+          </div>
+        </div>
+<div class="arrows">
+  <h1 class="arrows-title">ARROW BUTTONS</h1>
+  <ul class="arrows-wrapper">
+    <li class="arrow-wrapper"><a class="arrow arrow-left arrow-white"></a></li>
+    <li class="arrow-wrapper"><a class="arrow arrow-right arrow-white"></a></li>
+    <li class="arrow-wrapper"><a class="arrow arrow-left arrow-grey"></a></li>
+    <li class="arrow-wrapper"><a class="arrow arrow-right arrow-grey"></a></li>
+    <li class="arrow-wrapper"><a class="arrow arrow-left arrow-green"></a></li>
+    <li class="arrow-wrapper"><a class="arrow arrow-right arrow-green"></a></li>
+  </ul>
+</div>
+<div class="charts">
+  <h1 class="charts-title">PERCENTAGES / PIE CHART</h1>
+  <ul class="charts-wrapper">
+    <li class="pie" style="--value: &quot;0&quot;; --size: 100">
+      <div class="pie__segment" style="--offset: 0; --value: 0; --over50: 0; --bg: #e75735;"></div>
+    </li>
+    <li class="pie" style="--value: &quot;38&quot;; --size: 100">
+      <div class="pie__segment" style="--offset: 0; --value: 38; --over50: 0; --bg: #e75735;"></div>
+    </li>
+    <li class="pie" style="--value: &quot;62&quot;; --size: 100">
+      <div class="pie__segment" style="--offset: 0; --value: 62; --over50: 1; --bg: #e75735;"></div>
+    </li>
+    <li class="pie" style="--value: &quot;89&quot;; --size: 100">
+      <div class="pie__segment" style="--offset: 0; --value: 89; --over50: 1; --bg: #e75735;"></div>
+    </li>
+    <li class="pie multisectoral" style="--size: 100">
+      <div class="pie__segment" style="--offset: 0; --value: 15; --over50: 0; --bg: #747474;"></div>
+      <div class="pie__segment" style="--offset: 15; --value: 20; --over50: 0; --bg: #e75735;"></div>
+      <div class="pie__segment" style="--offset: 35; --value: 40; --over50: 0; --bg: #4eb7a8;"></div>
+      <div class="pie__segment" style="--offset: 75; --value: 25; --over50: 0; --bg: #e5e5e5;"></div>
+    </li>
+  </ul>
+</div>
+        <div class="sliders">
+          <h1 class="sliders-title">SLIDERS</h1>
+          <div class="sliders-wrapper">
+            <div class="slider1">
+                      <div class="slider-type1 slider-orange"><a class="ui-slider-handle" href="#">
+                          <div id="slider-result1">0</div></a>
+                        <input id="slider1" name="slider1" type="hidden">
+                      </div>
+            </div>
+            <div class="slider2">
+                      <div class="slider-type2 slider-green"><a class="ui-slider-handle" href="#"></a>
+                        <div class="percentage">
+                          <div class="percent">0</div>
+                          <div class="percent">25</div>
+                          <div class="percent">50</div>
+                          <div class="percent">75</div>
+                          <div class="percent">100</div>
+                        </div>
+                        <input id="slider2" name="slider2" type="hidden">
+                      </div>
+            </div>
+          </div>
+        </div>
+<div class="stages">
+  <h1 class="stages-title">STAGES</h1>
+  <div class="stages-slider">
+    <div class="stages-slider-1"></div>
+  </div>
+</div>
+<div class="form-elements">
+  <h1 class="form-elements-title">FORM ELEMENTS</h1>
+  <div class="form">
+    <form method="post" id="myForm">
+      <div class="input-name-wrapper input-error">
+        <input class="input input-name" type="text" placeholder="Your Name">
+      </div>
+      <div class="input-email-wrapper input-success">
+        <input class="input input-email" type="text" placeholder="Your Email">
+      </div>
+      <textarea class="textarea" name="message" cols="28" rows="4" placeholder="Your Message"></textarea>
+      <div class="button-wrapper">
+        <div class="button float-button-light button_big button_green button-border_green">SUBMIT</div>
+      </div>
+    </form>
+  </div>
+<div class="toggles">
+  <h1 class="toggles-title">TOGGLES</h1>
+  <div class="toggles-wrapper">
+    <div class="toggle"><input type="checkbox" class="toggle-checkbox">
+      <div class="toggle-knobs"></div>
+      <div class="toggle-layer"></div>
+    </div>
+    <div class="toggle"><input type="checkbox" class="toggle-checkbox" checked>
+      <div class="toggle-knobs"></div>
+      <div class="toggle-layer"></div>
+    </div>
+  </div>
+</div>
+<div class="tick-boxes">
+  <h1 class="tick-boxes-title">TICK BOXES</h1>
+  <div class="tick-boxes-wrapper">
+    <input type="checkbox" id="checkbox-1" hidden>
+    <label class="tick-box" for="checkbox-1" id="tick-box-1"></label>
+    <input type="checkbox" id="checkbox-2" hidden checked>
+    <label class="tick-box" for="checkbox-2" id="tick-box-2"></label>
+  </div>
+</div>
+</div>
+        <div class="search-user-wrapper">
+<div class="search-dropdown">
+  <h1 class="search-dropdown-title">SEARCH / DROP DOWN</h1>
+  <div class="search-form">
+    <input class="input-search" type="search" placeholder="Search">
+    <button class="search-submit" type="submit"></button>
+  </div>
+  <div class="search-form">
+    <input class="input-search input-search_failed" type="search" placeholder="Search" id="input-search_failed">
+    <button class="search-submit" type="submit"></button>
+  </div>
+  <div class="select-wrapper">
+    <select class="select" name="select">
+      <option value="" hidden disabled selected>Choose An Option</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+      <option value="option4">Option 4</option>
+    </select>
+  </div>
+</div>
+<div class="user-profile-wrapper">
+  <h1 class="user-profile-title">USER PROFILE</h1>
+  <div class="user-profile user-profile_grey">
+    <div class="user-profile__picture"></div>
+    <div class="user-profile__info">
+      <h2 class="user-profile__name">John Smith</h2>
+      <p class="user-profile__position">UX DESIGNER</p>
+      <div class="social-links">
+        <div class="social-facebook"></div>
+        <div class="social-twitter"></div>
+        <div class="social-dribble"></div>
+      </div>
+    </div>
+  </div>
+  <div class="user-profile user-profile_green">
+    <div class="user-profile__picture"></div>
+    <div class="user-profile__info">
+      <h2 class="user-profile__name">Sarah Brown</h2>
+      <p class="user-profile__position">DEVELOPER</p>
+      <div class="social-links">
+        <div class="social-facebook"></div>
+        <div class="social-twitter social-twitter_orange"></div>
+        <div class="social-dribble"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="news-events__wrapper">
+          <h1 class="news-events__title">NEWS  &  EVENTS</h1>
+<div class="news-block">
+  <div class="news-block__image"></div>
+  <div class="news-block__text-bg">
+    <h2 class="news-block__title">It’s all going downhill</h2>
+    <div class="news-block__date">24  AUGUST  2013</div>
+    <p class="news-block__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.</p>
+  </div>
+</div>
+<div class="event-block">
+  <div class="event-block__image"></div>
+  <div class="event-block__text-bg">
+    <div class="event-block__date">
+      <div class="event-block__date_day">24</div>
+      <div class="event-block__date_month">Aug</div>
+    </div>
+    <h2 class="event-block__title">THIS IS THE TITLE</h2>
+    <p class="event-block__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="event-block__button button button_big button_orange button-border_green">ADD TO CALENDAR</div>
+  </div>
+</div>
+        </div>
+        <div class="location__wrapper">
+          <h1 class="location__title">LOCATION</h1>
+<div class="location">
+  <div id="map"></div>
+  <div class="location__address">
+    <div class="info">Meet us!</div>
+    <div class="address">1259  CALIFORNIA ST<br>SAN FRANCISCO, CA</div><a class="icon-pin" href="#"></a><a class="icon-my-location" href="#"></a>
+  </div>
+</div>
+        </div>
+        <div class="calendar-messaging-wrapper">
+          <div class="calendar-wrapper">
+            <h1 class="calendar__title">CALENDAR</h1>
+<div class="calendar">
+  <div id="datepicker-container">
+    <div id="today"></div>
+  </div>
+</div>
+          </div>
+          <div class="messaging-wrapper">
+            <h1 class="messaging__title">MESSAGING</h1>
+<div class="messenger">
+  <div class="messenger__name">Sarah Brown</div>
+  <div class="messenger__container">
+    <div class="messenger__picture"></div>
+    <div class="messenger__arrow"></div>
+    <div id="messenger__message"> 
+      <p>Hey! So are we cool to meet at the art gallery? Say 8pm</p>
+    </div>
+    <textarea class="messenger__input" id="messageToSend" placeholder="Yeah that sounds great. See you then."></textarea>
+    <div class="button button_green button_big button-border_green" id="messenger__button">REPLY</div>
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="video-wrapper">
+          <h1 class="video__title">VIDEO</h1><iframe width="594" height="336" src="https://www.youtube.com/embed/rPmGtZAUxNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0D_HwilomS9jYCJaH_krzdGztthiT5UM&amp;callback=initMap"></script></body>
+</html>

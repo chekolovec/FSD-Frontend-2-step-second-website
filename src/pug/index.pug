@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 html(lang="en")
-head
-	meta(charset="UTF-8")
-	title FSD-Frontend-2-step-second-website
-body
-	.template
+	head
+		meta(charset="UTF-8")
+		title FSD-Frontend-2-step-second-website
+		meta(name="viewport" content="width=device-width")
+	body
 		.container
-			include ../components/buttons/buttons
-			include ../components/arrows/arrows
-			include ../components/charts/charts
-			include ../components/sliders/sliders
-			include ../components/stages/stages
-			include ../components/form-elements/form-elements
-			.search-user-wrapper
-				include ../components/search-dropdown/search-dropdown
-				include ../components/user-profile/user-profile
-			.news-events__wrapper
-				h1.news-events__title NEWS  &  EVENTS
-				include ../components/news-events/news-events
-			.location__wrapper
-				h1.location__title LOCATION
-				include ../components/location/location
-			.calendar-messaging-wrapper
-				.calendar-wrapper
-					h1.calendar__title CALENDAR
-					include ../components/calendar/calendar
-				.messaging-wrapper
-					h1.messaging__title MESSAGING
-					include ../components/messaging/messaging
-			.video-wrapper
-				h1.video__title VIDEO
-				include ../components/video/video
-	script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0D_HwilomS9jYCJaH_krzdGztthiT5UM&callback=initMap")
+			header.header
+				include ../components/menu/menu-mixin
+				+menu
+			aside.sidebar
+				include ../components/news-events/news-events-mixin
+				+events({title: 'Жилой комплекс "Ижора Парк", 4 очередь', info: 'Адрес новостройки: СПб, п. Металлострой, ул. Полевая / ул. Садовая', btnText: 'Подробнее'})
+				br
+				+events({title: 'Жилой комплекс "Десяткино 2.0", 1 очередь', info: 'Адрес новостройки: Лен. область, Всеволожский р-н, земли САОЗТ «Ручьи», участок №57', btnText: 'Подробнее'})
+				br
+				hr
+				br
+				include ../components/calendar/calendar	
+			.content
+				.messenger-wrapper
+					.messenger-button Напишите нам сообщение
+					include ../components/messaging/messaging-mixin
+					+messenger({name: 'Консультант', message: 'Оставьте свое сообщение в этой форме', btnText: 'ОТПРАВИТЬ'})
+				.news-wrapper
+					h1.news-title.news-title_main
+					p.news-date 22.01.2019
+					h2.news-title Офис строительной компании «Норманн» переезжает
+					p.news-text С 21 января 2019 года основной офис строительной компании «Норманн»  переезжает  по адресу: СПб, Пушкинский район,  поселок Шушары , Первомайская улица 5к2.<br>Прием клиентов компании, так же осуществляется по указанному адресу в часы работы отдела сервиса:<br>СР с 9.30 до 18.00 - приём звонков<br>ЧТ с 9.30 до 18.00 - приёмный день (по предварительной записи по телефонам : 648-00-11 , 648-00-22)<br>ПН, ВТ, ПТ работа с документами, приёма клиентов и звонков нет<br>СБ-ВС выходной<br>Встречи руководства с инициативными группами дольщиков будут проходить на строительных площадках объектов по согласованию.<br>В связи с переездом, а также налаживанием работы офисных систем связи, просим присылать Ваши вопросы на электронный адрес отдела сервиса : os@normann.ru. Просим извинения за временные неудобства.
+				br
+				hr
+				br
+				.news-wrapper
+					p.news-date 21.12.2018
+					h2.news-title Реквизиты и документы для перечисления платежей
+					p.news-text В связи с отзывом у ПАО «Донхлеббанк» лицензии на осуществление банковских операций (Приказ Банка России от 21.12.2018 № ОД-3269) прием платежей в адрес застройщиков по ДДУ с рассрочкой платежа невозможны. Реквизиты и документы для перечисления платежей будут направлены участникам долевого строительства после открытия новых расчетных счетов.
+				br
+				hr
+				br
+				.news-wrapper
+					p.news-date 14.12.2018
+					h2.news-title Срок разрешения на строительство по ЖК «Десяткино» 2 очередь продлен
+					p.news-text Срок разрешения на строительство по ЖК «Десяткино» 2 очередь продлен 31.07.2018 до 31 декабря 2018г.<br>Договор  страхования гражданской ответственности застройщика  с  СК «РЕСПЕКТ» № ГОЗ-29-0142/18  от 30.07.2018  заключен до 31.12.2018г.
+				br
+				hr
+				br
+				.news-wrapper
+					p.news-date 16.07.2018
+					h2.news-title Подрядчик приступил к выполнению работ
+					p.news-text Компания ООО "Спецстрой" приступила к завершению устройства стяжки на объекте ЖК «Десяткино» - 2 очередь строительства. Выполняется монтаж гидроизоляции в санузлах с 15-18 этаж.
+				br
+				hr
+				br
+				.news-wrapper
+					p.news-date 13.07.2018
+					h2.news-title Поставка оборудования
+					p.news-text На объекте ЖК «Три Апельсина» - 2 очередь строительства подрядчик, ООО «Санкт-Петербургский Лифтовой завод», выполняющий комплекс работ по поставке и монтажу лифтового оборудования, закончил подготовительные работы: выполнен монтаж настилов в лифтовых шахтах, монтаж настила в лифтовой, установлена дверь в машинное помещение; произведены замеры лифтовых шахт.<br>03.07.2018 на объект завезена первая партия лифтового оборудования.
+				
+			footer.footer

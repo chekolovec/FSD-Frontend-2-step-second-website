@@ -3,10 +3,12 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack')
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: {
+    main: './src/index.js',
+    projects: './src/projects.js'},
   output: {
     path: path.resolve('./dist'),
-    filename: 'main.js',
+    filename: '[name].js',
     // publicPath: path.resolve('./dist')
   },
   module: {
@@ -41,7 +43,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: '/img',
+              outputPath: './img',
               publicPath: '../img'
             },  
           }
@@ -65,7 +67,14 @@ module.exports = {
   plugins: [ 
     new ExtractTextPlugin({filename: 'css/main.css'}),
     new HtmlWebpackPlugin({
-    template: './src/pug/index.pug'
+    filename: 'index.html',
+    template: './src/pug/index.pug',
+    chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+    filename: 'projects.html',
+    template: './src/pug/projects.pug',
+    chunks: ['projects']
     }),
     new webpack.ProvidePlugin({
     $: "jquery",

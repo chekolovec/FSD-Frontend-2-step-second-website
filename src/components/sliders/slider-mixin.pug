@@ -1,0 +1,15 @@
+mixin slider(options)
+	div(class="slider-type"+options.type+" slider-"+options.color)
+		if options.type == '1'
+			a(class="ui-slider-handle" href="#")
+				#slider-result1 0
+			input(id="slider1" name="slider1" type="hidden")
+		else
+			a(class="ui-slider-handle" href="#")
+			.percentage
+				.percent 0
+				.percent 25
+				.percent 50
+				.percent 75
+				.percent 100
+			input(id="slider2" name="slider2" type="hidden")

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title FSD-Frontend-2-step-second-website
+		meta(name="viewport" content="width=device-width")
+	body
+		.container
+			header.header
+				include ../components/menu/menu-mixin
+				+menu
+			aside.sidebar.projects-sidebar
+				#map
+				br
+				hr
+				br
+				include ../components/calendar/calendar					
+			.content.projects-content
+				.messenger-wrapper
+					.messenger-button Напишите нам сообщение
+					include ../components/messaging/messaging-mixin
+					+messenger({name: 'Консультант', message: 'Оставьте свое сообщение в этой форме', btnText: 'ОТПРАВИТЬ'})
+				.projects-wrapper
+					.project
+						a(href="#").project-link
+							h2.project-title Малоэтажный жилой комплекс "Норманндия"
+						.project-image
+						.project-progress
+							p.progress-title Ход строительства
+							.pie(style='--value: "70%"; --size: 100')
+								.pie__segment(style='--offset: 0; --value: 70; --over50: 1; --bg: #e75735;')
+							include ../components/buttons/button-mixin
+							+button({size: 'big', color: 'orange', text: 'Подробнее'})
+						p.project-info.project-type <b>Тип дома:</b> Малоэтажный жилой комплекс
+						p.project-info.project-floors <b>Этажность:</b> таунхаусы, 3 этажа
+						p.project-info.project-region <b>Район:</b> Приморский
+						p.project-info.project-metro <b>Ближайшая станция метро:</b> Озерки
+						p.project-info.project-address <b>Адрес новостройки:</b> СПб, Коломяги, ул. 2-ая Семёновская
+						p.project-info.project-date <b>Срок передачи ключей:</b> IV кв. 2018 г.
+					.project
+						a(href="#").project-link
+							h2.project-title Жилой комплекс "Яркий", 2 очередь
+						.project-image
+						.project-progress
+							p.progress-title Ход строительства
+							.pie(style='--value: "60%"; --size: 100')
+								.pie__segment(style='--offset: 0; --value: 60; --over50: 1; --bg: #e75735;')
+							include ../components/buttons/button-mixin
+							+button({size: 'big', color: 'orange', text: 'Подробнее'})
+						p.project-info.project-type <b>Тип дома:</b> Монолитный
+						p.project-info.project-floors <b>Этажность:</b> 12
+						p.project-info.project-region <b>Район:</b> Всеволожский
+						p.project-info.project-metro <b>Ближайшая станция метро:</b> Ладожская
+						p.project-info.project-address <b>Адрес новостройки:</b> Лен. область, Всеволожский р-н, дер. Янино-1
+						p.project-info.project-date <b>Срок передачи ключей:</b> до 31.12.2019
+					.project
+						a(href="#").project-link
+							h2.project-title Жилой комплекс "На Заречной", 3 очередь
+						.project-image
+						.project-progress
+							p.progress-title Ход строительства
+							.pie(style='--value: "20%"; --size: 100')
+								.pie__segment(style='--offset: 0; --value: 20; --over50: 0; --bg: #e75735;')
+							include ../components/buttons/button-mixin
+							+button({size: 'big', color: 'orange', text: 'Подробнее'})
+						p.project-info.project-type <b>Тип дома:</b> Монолитный с вент. фасадом
+						p.project-info.project-floors <b>Этажность:</b> 19-25
+						p.project-info.project-region <b>Район:</b> Выборгский
+						p.project-info.project-metro <b>Ближайшая станция метро:</b> Парнас
+						p.project-info.project-address <b>Адрес новостройки:</b> СПб, п. Парголово, Торфяное, Ольгинская дорога, участок №5
+						p.project-info.project-date <b>Срок передачи ключей:</b> до 31.10.2019 г.
+					.project
+						a(href="#").project-link
+							h2.project-title Жилой комплекс "Три Апельсина", 2 очередь
+						.project-image
+						.project-progress
+							p.progress-title Ход строительства
+							.pie(style='--value: "90%"; --size: 100')
+								.pie__segment(style='--offset: 0; --value: 90; --over50: 1; --bg: #e75735;')
+							include ../components/buttons/button-mixin
+							+button({size: 'big', color: 'orange', text: 'Подробнее'})
+						p.project-info.project-type <b>Тип дома:</b> Монолитный с вент. фасадом
+						p.project-info.project-floors <b>Этажность:</b> 26 этажей
+						p.project-info.project-region <b>Район:</b> Выборгский
+						p.project-info.project-metro <b>Ближайшая станция метро:</b> Парнас
+						p.project-info.project-address <b>Адрес новостройки:</b> СПб, п.Парголово, Торфяное, Ольгинская дорога, участок №9
+						p.project-info.project-date <b>Срок передачи ключей:</b> 31 март 2019 г. (передача ключей в течение 3 мес.)
+
+				
+				
+			footer.footer
+
+	script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0D_HwilomS9jYCJaH_krzdGztthiT5UM&callback=initMap")

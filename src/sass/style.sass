@@ -1,65 +1,151 @@
-.template
-	padding-top: 52px
-	.container
-		width: 594px
-		margin: 0 auto
-		h1
-			text-align: center
-			font-size: 18px
-			font-family: Lato Black, sans serif
-			color: #4f4f4f
-		.search-user-wrapper
-			&::after
-				content: ''
+*
+	margin: 0
+	padding: 0
+.container
+	width: 100%
+	margin: 0 auto
+	max-width: 1400px
+	.header
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		background: #e75735
+		font-family: sans-serif
+		font-weight: 600
+		.header-logo
+			width: 15%
+			height: 50px
+			background: url('../img/logo.png') center center no-repeat
+			background-size: contain
+		.header-menu
+			width: 80%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-evenly
+			.link
+				padding: 20px
+				text-decoration: none
+				background: #e75735
+				color: #fff
+				&:hover
+					background: #d54c2c
+	.sidebar
+		width: 320px
+		background: #e5e5e5
+		box-sizing: border-box
+		float: right
+		padding: 20px
+		.event-block
+			margin: 0 auto
+			&:nth-of-type(1)
+				.event-block__image
+					background: url('../img/building-pic-1.png')
+			&:nth-of-type(2)
+				.event-block__image
+					background: url('../img/building-pic-2.png')
+		.calendar
+			margin: 0 auto
+			width: 278px
+		#map
+			height: 350px
+	.content
+		float: left
+		box-sizing: border-box
+		width: calc(100% - 320px)
+		padding: 40px
+		overflow: auto
+		.messenger-wrapper
+			position: fixed
+			right: 0
+			bottom: 0
+			.messenger
+				display: none
+			.messenger-button
+				padding: 20px
+				background: #f2f2f2
+				border-radius: 5px
+				font-family: Lato Black, sans-serif
+				color: #868686
+				cursor: pointer
+		.news-wrapper
+			border: 2px solid #e75735
+			border-radius: 5px
+			font-family: sans-serif
+			padding: 10px
+			.news-title
+				font-size: 30px
+			.news-date
+				color: #868686
+			.news-text
+				font-weight: 400
+	.projects-sidebar
+		#map
+			border-radius: 10px
+			&:after
+				content: 'Карта новостроек'
 				display: block
-				clear: both
-				padding-bottom: 59px
-		.news-events__wrapper
-			padding-left: 5px
-			.news-events__title
+				width: 100%
+				position: absolute
+				bottom: 0
+				padding: 20px 0
+				text-align: center
+				background: #e75735
+				font-family: sans-serif
+				font-weight: 600
+				color: #fff
+.projects-content
+	.projects-wrapper
+		.project
+			padding: 20px
+			background: #f2f2f2
+			border: 2px solid #e5e5e5
+			border-radius: 10px
+			margin-bottom: 20px
+			text-decoration: none
+			.project-link
+				text-decoration: none
+				color: #000
+			.project-title
+				font-family: Lato Regular, sans-serif
 				padding-bottom: 20px
-			.news-block
+			.project-image
+				background-size: cover
+				height: 150px
+				width: 150px
 				float: left
-			.event-block
+				margin-right: 20px
+			&:nth-child(1)
+				.project-image
+					background: url('../img/project-1.png') center center no-repeat
+			&:nth-child(2)
+				.project-image
+					background: url('../img/project-2.png') center center no-repeat
+			&:nth-child(3)
+				.project-image
+					background: url('../img/project-3.png') center center no-repeat
+			&:nth-child(4)
+				.project-image
+					background: url('../img/project-4.png') center center no-repeat			
+			.project-progress
+				.pie
+					margin: 0 auto
+					margin-bottom: 10px
+				.progress-title
+					font-family: Lato Regular, sans-serif
+					padding-bottom: 10px					
+			.project-info
+				font-family: Lato Light, sans-serif
+				padding-bottom: 7px
+			.project-progress
 				float: right
-				margin-right: -5px
-			&::after
+			&:after
 				content: ''
 				display: block
 				clear: both
-				padding-bottom: 33px
-		.location__wrapper
-			padding-left: 4px
-			.location__title
-				padding-bottom: 20px
-			&::after
-				content: ''
-				display: block
-				clear: both
-				padding-bottom: 55px
-		.calendar-messaging-wrapper
-			&::after
-				content: ''
-				display: block
-				clear: both
-				padding-bottom: 41px
-			.calendar-wrapper
-				width: 297px
-				padding-left: 5px
-				float: left
-				.calendar__title
-					padding-bottom: 14px
-					letter-spacing: 0.05em
-					margin-left: -23px
-			.messaging-wrapper
-				width: 292px
-				float: right
-				padding-left: 8px
-				box-sizing: border-box
-				.messaging__title
-					padding-bottom: 14px
-					letter-spacing: 0.05em
-		.video-wrapper
-			padding-left: 4px
-			.video__title
-				padding-bottom: 11px
+

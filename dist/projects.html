@@ -1,0 +1,113 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FSD-Frontend-2-step-second-website</title>
+    <meta name="viewport" content="width=device-width">
+  <link href="css/main.css" rel="stylesheet"></head>
+  <body>
+    <div class="container">
+      <header class="header"><a class="header-logo" href="./index.html"></a>
+                <nav class="header-menu"><a class="link link-main" href="./index.html">Главная</a><a class="link link-second" href="./projects.html">Новостройки</a><a class="link link-third" href="#">Третья</a><a class="link link-fourth" href="#">Четвертая</a></nav>
+      </header>
+      <aside class="sidebar projects-sidebar">
+        <div id="map"></div><br>
+        <hr><br>
+<div class="calendar">
+  <div id="datepicker-container">
+    <div id="today"></div>
+  </div>
+</div>
+      </aside>
+      <div class="content projects-content">
+        <div class="messenger-wrapper">
+          <div class="messenger-button">Напишите нам сообщение</div>
+                    <div class="messenger">
+                      <div class="messenger__name">Консультант</div>
+                      <div class="messenger__container">
+                        <div class="messenger__picture"></div>
+                        <div class="messenger__arrow"></div>
+                        <div id="messenger__message"> 
+                          <p>Оставьте свое сообщение в этой форме</p>
+                        </div>
+                        <textarea class="messenger__input" id="messageToSend" placeholder="Ваше сообщение"></textarea>
+                        <div class="button button_green button_big button-border_green" id="messenger__button">ОТПРАВИТЬ</div>
+                      </div>
+                    </div>
+        </div>
+        <div class="projects-wrapper">
+          <div class="project"><a class="project-link" href="#">
+              <h2 class="project-title">Малоэтажный жилой комплекс "Норманндия"</h2></a>
+            <div class="project-image"></div>
+            <div class="project-progress">
+              <p class="progress-title">Ход строительства</p>
+              <div class="pie" style="--value: &quot;70%&quot;; --size: 100">
+                <div class="pie__segment" style="--offset: 0; --value: 70; --over50: 1; --bg: #e75735;"></div>
+              </div>
+                            <div class="button button_big button_orange button-border_orange button-color_undefined">Подробнее</div>
+            </div>
+            <p class="project-info project-type"><b>Тип дома:</b> Малоэтажный жилой комплекс</p>
+            <p class="project-info project-floors"><b>Этажность:</b> таунхаусы, 3 этажа</p>
+            <p class="project-info project-region"><b>Район:</b> Приморский</p>
+            <p class="project-info project-metro"><b>Ближайшая станция метро:</b> Озерки</p>
+            <p class="project-info project-address"><b>Адрес новостройки:</b> СПб, Коломяги, ул. 2-ая Семёновская</p>
+            <p class="project-info project-date"><b>Срок передачи ключей:</b> IV кв. 2018 г.</p>
+          </div>
+          <div class="project"><a class="project-link" href="#">
+              <h2 class="project-title">Жилой комплекс "Яркий", 2 очередь</h2></a>
+            <div class="project-image"></div>
+            <div class="project-progress">
+              <p class="progress-title">Ход строительства</p>
+              <div class="pie" style="--value: &quot;60%&quot;; --size: 100">
+                <div class="pie__segment" style="--offset: 0; --value: 60; --over50: 1; --bg: #e75735;"></div>
+              </div>
+                            <div class="button button_big button_orange button-border_orange button-color_undefined">Подробнее</div>
+            </div>
+            <p class="project-info project-type"><b>Тип дома:</b> Монолитный</p>
+            <p class="project-info project-floors"><b>Этажность:</b> 12</p>
+            <p class="project-info project-region"><b>Район:</b> Всеволожский</p>
+            <p class="project-info project-metro"><b>Ближайшая станция метро:</b> Ладожская</p>
+            <p class="project-info project-address"><b>Адрес новостройки:</b> Лен. область, Всеволожский р-н, дер. Янино-1</p>
+            <p class="project-info project-date"><b>Срок передачи ключей:</b> до 31.12.2019</p>
+          </div>
+          <div class="project"><a class="project-link" href="#">
+              <h2 class="project-title">Жилой комплекс "На Заречной", 3 очередь</h2></a>
+            <div class="project-image"></div>
+            <div class="project-progress">
+              <p class="progress-title">Ход строительства</p>
+              <div class="pie" style="--value: &quot;20%&quot;; --size: 100">
+                <div class="pie__segment" style="--offset: 0; --value: 20; --over50: 0; --bg: #e75735;"></div>
+              </div>
+                            <div class="button button_big button_orange button-border_orange button-color_undefined">Подробнее</div>
+            </div>
+            <p class="project-info project-type"><b>Тип дома:</b> Монолитный с вент. фасадом</p>
+            <p class="project-info project-floors"><b>Этажность:</b> 19-25</p>
+            <p class="project-info project-region"><b>Район:</b> Выборгский</p>
+            <p class="project-info project-metro"><b>Ближайшая станция метро:</b> Парнас</p>
+            <p class="project-info project-address"><b>Адрес новостройки:</b> СПб, п. Парголово, Торфяное, Ольгинская дорога, участок №5</p>
+            <p class="project-info project-date"><b>Срок передачи ключей:</b> до 31.10.2019 г.</p>
+          </div>
+          <div class="project"><a class="project-link" href="#">
+              <h2 class="project-title">Жилой комплекс "Три Апельсина", 2 очередь</h2></a>
+            <div class="project-image"></div>
+            <div class="project-progress">
+              <p class="progress-title">Ход строительства</p>
+              <div class="pie" style="--value: &quot;90%&quot;; --size: 100">
+                <div class="pie__segment" style="--offset: 0; --value: 90; --over50: 1; --bg: #e75735;"></div>
+              </div>
+                            <div class="button button_big button_orange button-border_orange button-color_undefined">Подробнее</div>
+            </div>
+            <p class="project-info project-type"><b>Тип дома:</b> Монолитный с вент. фасадом</p>
+            <p class="project-info project-floors"><b>Этажность:</b> 26 этажей</p>
+            <p class="project-info project-region"><b>Район:</b> Выборгский</p>
+            <p class="project-info project-metro"><b>Ближайшая станция метро:</b> Парнас</p>
+            <p class="project-info project-address"><b>Адрес новостройки:</b> СПб, п.Парголово, Торфяное, Ольгинская дорога, участок №9</p>
+            <p class="project-info project-date"><b>Срок передачи ключей:</b> 31 март 2019 г. (передача ключей в течение 3 мес.)</p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer"></footer>
+    </div>
+  <script type="text/javascript" src="projects.js"></script></body>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0D_HwilomS9jYCJaH_krzdGztthiT5UM&amp;callback=initMap"></script>
+</html>

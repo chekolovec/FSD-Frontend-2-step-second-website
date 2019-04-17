@@ -1,15 +1,30 @@
+include button-mixin
+
 .buttons
 	h1.buttons__title STANDARD BUTTONS
-	ul.template-buttons__wrapper
-		li.button.float-button-light.button_small.button_green BUTTON
-		li.button.float-button-light.button_big.button_green BUTTON
-		li.button.float-button-light.button_big.button_orange BUTTON
-		li.button.float-button-light.button_small.button_orange BUTTON
-		li.button.float-button-light.button_small.button_green.button-border_green BUTTON
-		li.button.float-button-light.button_big.button_green.button-border_green BUTTON
-		li.button.float-button-light.button_big.button_orange.button-border_orange BUTTON
-		li.button.float-button-light.button_small.button_orange.button-border_orange BUTTON
-		li.button.float-button-light.button_small.button_white.button-border_green.button-color_green BUTTON
-		li.button.float-button-light.button_big.button_white.button-border_green.button-color_green BUTTON
-		li.button.float-button-light.button_big.button_white.button-border_orange.button-color_orange BUTTON
-		li.button.float-button-light.button_small.button_white.button-border_orange.button-color_orange BUTTON
+	.template-buttons__wrapper
+		.button-wrapper
+			+button({size: 'small', color: 'green', borderColor: 'none', text: 'BUTTON'})
+		.button-wrapper
+			+button({size: 'big', color: 'green', borderColor: 'none', text: 'BUTTON'})
+		.button-wrapper
+			+button({size: 'big', color: 'orange', borderColor: 'none', text: 'BUTTON'})
+		.button-wrapper
+			+button({size: 'small', color: 'orange', borderColor: 'none', text: 'BUTTON'})
+		.button-wrapper
+			+button({size: 'small', color: 'green', text: 'BUTTON'})
+		.button-wrapper
+			+button({size: 'big', color: 'green', text: 'BUTTON'})
+		.button-wrapper
+			+button({size: 'big', color: 'orange', text: 'BUTTON'})
+		.button-wrapper
+			+button({size: 'small', color: 'orange', text: 'BUTTON'})
+		.button-wrapper
+			+button({size: 'small', color: 'white', borderColor: 'green', text: 'BUTTON', buttonColor: 'green'})
+		.button-wrapper
+			+button({size: 'big', color: 'white', borderColor: 'green', text: 'BUTTON', buttonColor: 'green'})
+		.button-wrapper
+			+button({size: 'big', color: 'white', borderColor: 'orange', text: 'BUTTON', buttonColor: 'orange'})
+		.button-wrapper
+			+button({size: 'small', color: 'white', borderColor: 'orange', text: 'BUTTON', buttonColor: 'orange'})
+	
