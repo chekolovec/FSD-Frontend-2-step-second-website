@@ -1,0 +1,8 @@
+mixin location(options)
+	.location
+		#map
+		.location__address
+			.info= options.info || ''
+			.address= options.address || ''
+			a(href="#").icon-pin
+			a(href="#").icon-my-location

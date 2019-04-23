@@ -35,6 +35,12 @@
 				color: #fff
 				&:hover
 					background: #d54c2c
+		.search-form
+			margin-top: 15px
+			margin-right: 10px
+			.input-search,
+			.search-submit
+				border: 1px solid #e5e5e5
 	.sidebar
 		width: 320px
 		background: #e5e5e5
@@ -148,4 +154,199 @@
 				content: ''
 				display: block
 				clear: both
+.request-content
+	.request-wrapper
+		.request-title
+			font-family: Lato Regular, sans-serif
+			padding-bottom: 60px
+			text-align: center
+		.stages-slider
+			width: 60%
+			margin: 0 auto
+			padding-bottom: 60px
+			.stages-slider-1
+				width: 100%
+		.input-wrapper
+			width: 206px
+		.arrow-wrapper-right
+			float: right
+		.arrow-wrapper-left
+			float: left
+			display: none
+		.arrow-orange
+			border: 3px solid #e75735
+			&:after
+				border-right: 3px solid #e75735
+				border-bottom: 3px solid #e75735
+		.contact-form__block1
+			height: 250px
+			.form-unit-wrapper
+				width: 325px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				margin: 0 auto
+				margin-bottom: 30px
+				.input-wrapper
+					margin-left: auto
+				.input-error
+					&:after
+						content: 'Ошибка'
+				.input-success
+					&:after
+						content: 'Спасибо'
+			.input-title
+				font-family: Lato Regular, sans-serif
+				padding-right: 13px
+				line-height: 28px
+
+		.contact-form__block2
+			display: none
+			text-align: center
+			height: 250px
+			overflow: auto
+			&_title
+				font-family: Lato Regular, sans-serif
+				padding-bottom: 30px
+			.options-wrapper
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				flex-wrap: wrap
+				.request-option
+					content: ''
+					display: block
+					width: 40%
+					height: 100px
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					background: #f2f2f2
+					border: 2px solid #e5e5e5
+					border-radius: 5px
+					margin-right: 20px
+					margin-bottom: 20px
+					.tick-box
+						flex-shrink: 0
+						margin-top: 10%
+						margin-left: 20px
+						margin-right: 20px
+					.option-img
+						width: 100px
+						height: 100px
+						background-size: cover
+						flex-shrink: 0
+						margin-right: 20px
+						margin-bottom: 20px
+					.option-name
+						font-family: Lato Regular, sans-serif
+						padding-top: 24px
+						padding-right: 10px
+						padding-left: 10px
+				.request-option
+					&:nth-of-type(1)
+						.option-img
+							background: url('../img/project-1.png') center center no-repeat
+					&:nth-of-type(2)
+						.option-img
+							background: url('../img/project-2.png') center center no-repeat
+					&:nth-of-type(3)
+						.option-img
+							background: url('../img/project-3.png') center center no-repeat
+					&:nth-of-type(4)
+						.option-img
+							background: url('../img/project-4.png') center center no-repeat
+					&:nth-of-type(5)
+						.option-img
+							background: url('../img/project-5.png') center center no-repeat
+					&:nth-of-type(6)
+						.option-img
+							background: url('../img/project-6.png') center center no-repeat
+				.request-option_input:checked + .request-option
+					border-color: #4eb7a8
+					.tick-box
+						background-color: #4eb7a8
+						&:before
+							border-color: #fff
+		.contact-form__block3
+			display: none
+			text-align: center
+			height: 250px
+			overflow: auto
+			&_title
+				font-family: Lato Regular, sans-serif
+				padding-bottom: 30px
+			.textarea-wrapper
+				width: 60%
+				margin: 0 auto
+				margin-bottom: 20px
+		.contacts
+			text-align: center
+			.contacts-title
+				font-family: Lato Regular
+				padding-bottom: 30px
+			.location
+				width: 100%
+				height: 350px
+				margin-bottom: 30px
+				.location__address
+					width: 100%
+					.address
+						width: 50%
+			.info-wrapper
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: space-evenly
+				flex-wrap: wrap
+				.info-block
+					width: 40%
+					text-align: left
+					background: #e5e5e5
+					padding: 20px
+					border-radius: 5px
+					margin-bottom: 20px
+					&:nth-child(2n-1)
+						margin-right: 20px
+.video-container
+	.content-video
+		padding: 0
+	.content-video
+		width: 100%
+		.video-wrapper
+			text-align: center
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			.video-wrapper__title
+				font-family: Lato Regular
+				width: 100%
+				flex-shrink: 0
+				padding-bottom: 30px
+			.video-item
+				width: 40%
+				height: 23vw
+				margin-bottom: 30px
+				padding: 20px
+				background: #e5e5e5
+				border: 1px solid grey
+				&-wrapper
+					height: calc(100% - 50px)
+				&__name
+					font-family: Lato Regular
+					padding-top: 20px
+					font-size: 20px
 

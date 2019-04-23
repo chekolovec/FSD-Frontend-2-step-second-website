@@ -1,5 +1,6 @@
 import './sass/style.sass'
 import './components/charts/sass/chart-style.sass'
+import './components/search-dropdown/sass/search-dropdown-style.sass'
 import './components/calendar/sass/calendar-style.sass'
 import './components/calendar/css/jquery-ui.structure.css'
 import './components/calendar/js/jquery.js'

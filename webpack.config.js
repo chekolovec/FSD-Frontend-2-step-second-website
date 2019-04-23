@@ -5,7 +5,9 @@ const webpack = require('webpack')
 module.exports = {
   entry: {
     main: './src/index.js',
-    projects: './src/projects.js'},
+    projects: './src/projects.js',
+    video: './src/video.js',
+    request: './src/request.js'},
   output: {
     path: path.resolve('./dist'),
     filename: '[name].js',
@@ -75,6 +77,16 @@ module.exports = {
     filename: 'projects.html',
     template: './src/pug/projects.pug',
     chunks: ['projects']
+    }),
+    new HtmlWebpackPlugin({
+    filename: 'video.html',
+    template: './src/pug/video.pug',
+    chunks: ['video']
+    }),
+    new HtmlWebpackPlugin({
+    filename: 'request.html',
+    template: './src/pug/request.pug',
+    chunks: ['request']
     }),
     new webpack.ProvidePlugin({
     $: "jquery",

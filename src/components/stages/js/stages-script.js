@@ -17,7 +17,6 @@ for(let i = 1; i <= value; i++) {
 }
 
 
-console.log($(".stages-slider-1").slider("value"));
 $(".stages-slider-1").slider({
    change: function(event, ui) {
    	for(let i = 1; i <= ui.value; i++) {

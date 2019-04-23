@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title FSD-Frontend-2-step-second-website
+		meta(name="viewport" content="width=device-width")
+	body
+		.container
+			header.header
+				include ../components/menu/menu-mixin
+				+menu
+			aside.sidebar
+				include ../components/news-events/news-events-mixin
+				+events({title: 'Жилой комплекс "Ижора Парк", 4 очередь', info: 'Адрес новостройки: СПб, п. Металлострой, ул. Полевая / ул. Садовая', btnText: 'Подробнее'})
+				br
+				+events({title: 'Жилой комплекс "Десяткино 2.0", 1 очередь', info: 'Адрес новостройки: Лен. область, Всеволожский р-н, земли САОЗТ «Ручьи», участок №57', btnText: 'Подробнее'})
+
+			.content.request-content
+				.request-wrapper
+					h3.request-title Заполните заявку и наш менеджер с вами свяжется
+					.arrow-wrapper.arrow-wrapper-right
+						a.arrow.arrow-right.arrow-orange
+					.arrow-wrapper.arrow-wrapper-left
+						a.arrow.arrow-left.arrow-orange
+					.stages-slider
+						.stages-slider-1
+					form.contact-form
+					.contact-form__block1
+						.form-unit-wrapper
+							.input-title 
+								p Ваше Имя:
+							.input-wrapper.input-error
+								input(type="text" class="input input-name" placeholder="Ваше Имя")
+						.form-unit-wrapper
+							.input-title 
+								p Ваш Email:
+							.input-wrapper.input-error
+								input(type="text" class="input input-email" placeholder="Ваш Email")
+						.form-unit-wrapper
+							.input-title 
+								p Ваш телефон:
+							.input-wrapper.input-error
+								input(type="text" class="input input-phone" placeholder="Ваш телефон")
+					.contact-form__block2
+						h3.contact-form__block2_title Интересующий вариант
+						.options-wrapper
+							input(type="checkbox" id="option1" class="request-option_input" name="request-option" hidden)
+							label(for="option1"  class="request-option")
+								.tick-box
+								.option-img
+								.option-name Малоэтажный жилой комплекс "Норманндия"
+							input(type="checkbox" id="option2" class="request-option_input" name="request-option" hidden)
+							label(for="option2"  class="request-option")
+								.tick-box
+								.option-img
+								.option-name Жилой комплекс "Яркий", 2 очередь
+							input(type="checkbox" id="option3" class="request-option_input" name="request-option" hidden)
+							label(for="option3"  class="request-option")
+								.tick-box
+								.option-img
+								.option-name Жилой комплекс "Морошкино", 2 очередь
+							input(type="checkbox" id="option4" class="request-option_input" name="request-option" hidden)
+							label(for="option4"  class="request-option")
+								.tick-box
+								.option-img
+								.option-name Жилой комплекс "На Заречной", 3 очередь
+							input(type="checkbox" id="option5" class="request-option_input" name="request-option" hidden)
+							label(for="option5"  class="request-option")
+								.tick-box
+								.option-img
+								.option-name Жилой комплекс "Десяткино 2.0", 2 очередь
+							input(type="checkbox" id="option6" class="request-option_input" name="request-option" hidden)
+							label(for="option6"  class="request-option")
+								.tick-box
+								.option-img
+								.option-name Жилой комплекс "На Заречной", 1 очередь
+					.contact-form__block3
+						h3.contact-form__block3_title Текст запроса
+						.textarea-wrapper
+							textarea(name="message", cols="28", rows="4" placeholder="Текст запроса" class="textarea")
+						include ../components/buttons/button-mixin
+						+button({size: 'big', color: 'orange', text: 'Отправить'})
+					br
+					hr
+					br
+					.contacts
+						h3.contacts-title Контактная информация
+						include ../components/location/location-mixin
+						+location({info: 'Главный офис:', address: '199034, г. Санкт-Петербург, Пушкинский район, поселок Шушары, Первомайская улица 5к2.'})
+						.info-wrapper
+							.info-block
+								h4.info-block__title Отдел продаж:
+								br
+								.info-block__phone тел. +7 (812) 648-00-11 
+								.info-block__phone 8 (800) 333 2 111 – бесплатный звонок из регионов
+								.info-block__email sale@normann.ru
+								br
+								.info-block__work-hours
+									p График работы:
+									p СР с 9.30 до 18.00 - приём звонков
+									p ЧТ с 9.30 до 18.00 - приёмный день (по предварительной записи по телефонам : 648-00-11 , 648-00-22)
+									p СБ-ВС выходной
+							.info-block
+								h4.info-block__title Отдел сервиса (послепродажное обслуживание):
+								br
+								.info-block__phone тел. +7 (812) 648-00-22 
+								.info-block__email os@normann.ru
+								br
+								.info-block__work-hours
+									p График работы:
+									p СР с 9.30 до 18.00 - приём звонков
+									p ЧТ с 9.30 до 18.00 - приёмный день
+									p ПН, ВТ, ПТ работа с документами, приёма клиентов и звонков нет
+									p СБ-ВС выходной
+							.info-block
+								h4.info-block__title Работа с юридическими лицами:
+								br
+								.info-block__phone тел. +7 (812) 748-22-32
+								.info-block__phone факс +7 (812) 748-22-62
+								.info-block__email normann@normann.ru
+							.info-block
+								h4.info-block__title Работа со СМИ:
+								br
+								.info-block__phone тел. +7 (921) 424-53-02
+								.info-block__email pr@normann.ru
+				.messenger-wrapper
+					.messenger-button Напишите нам сообщение
+					include ../components/messaging/messaging-mixin
+					+messenger({name: 'Консультант', message: 'Оставьте свое сообщение в этой форме', btnText: 'ОТПРАВИТЬ'})
+	script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0D_HwilomS9jYCJaH_krzdGztthiT5UM&callback=initMap")
